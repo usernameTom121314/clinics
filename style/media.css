@@ -1,0 +1,152 @@
+@media(max-width:1500px){
+    .maps div{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+            width: 100%;
+            margin:0;
+    }
+    .procedures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .maps{
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media(max-width:1200px){
+    .header__btn{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-top: 20px;
+    }
+
+    .header__btn::after,
+    .header__btn::before,
+    .header__btn span{
+        content: '';
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header__btn::after{
+        bottom: 0;
+    }
+    .header__btn::before{
+        top: 0;
+    }
+    .header__btn span{
+        top: 9px;
+    }
+
+    .header__list{
+        flex-direction: column;
+        position: absolute;
+        display: none;
+        background: #1e1e1e;
+        top:18px;
+        transform: translateY(10%);
+        transition: 1s transform;
+        
+    }
+    .header__list li{
+        margin: 0;
+        padding: 20px;
+    }
+    .open{
+        display: block;
+    }
+    
+    .open-line::before,
+    .open-line span{
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%) rotate(135deg);  
+    }
+    .open-line::after{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-135deg);
+    }
+    .header__link{
+        padding: 0;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .header__link::after{
+        display: none;
+    }
+  }
+  @media(max-width:800px){
+    .header__list{
+        right: 20px;
+    }
+    .second{
+        display: none;
+    }
+    .header__text{
+        font-size: 40px;
+        inline-size: 500px;
+    }
+    .header__number{
+        padding: 17px 32px;
+    font-size: 20px;
+    }
+    .locationFromGoogle{
+        width: 100%;
+        margin: 0, 5px;
+    }
+  }
+  @media(max-width:770px){
+    h3{
+        width: max-content;
+        display: inline;
+    }
+  }
+  @media(max-width:690px){
+    .locationFromGoogle{
+        width: 100%;
+    }
+    .maps div{
+        width: 100%;  
+    }
+    h1{
+        font-size: 20px;
+    }
+    .procedures__title{
+        font-size: 20px;
+        width: 100%;
+    }
+    /* .procedures__explain{
+        font-size: 18px;
+    }
+    .procedures__explain p{
+        font-size: 16px;
+    } */
+    .maps h3{
+        font-size: 16px;
+    }
+    .header__text{
+        font-size: 30px;
+        width: 100%;
+    }
+    .location__title h3{
+        font-size: 25px;
+    }
+  }
+  @media(max-width:323px){
+    
+    
+  }
